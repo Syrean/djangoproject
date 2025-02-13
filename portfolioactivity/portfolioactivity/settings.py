@@ -30,14 +30,15 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-]
+INSTALLED_APPS = [ 
+    'django.contrib.admin', 
+    'django.contrib.auth', 
+    'django.contrib.contenttypes', 
+    'django.contrib.sessions', 
+    'django.contrib.messages', 
+    'django.contrib.staticfiles', 
+    'portfolio',  # Add this line 
+] 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -51,21 +52,21 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'portfolioactivity.urls'
 
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
+TEMPLATES = [ 
+ { 
+     'BACKEND': 'django.template.backends.django.DjangoTemplates', 
+     'DIRS': [BASE_DIR / "templates"],  # Ensure templates are recognized 
+     'APP_DIRS': True, 
+     'OPTIONS':  { 
+         'context_processors': [ 
+             'django.template.context_processors.debug', 
+             'django.template.context_processors.request', 
+             'django.contrib.auth.context_processors.auth', 
+             'django.contrib.messages.context_processors.messages', 
+          ], 
+      }, 
+}, 
+] 
 
 WSGI_APPLICATION = 'portfolioactivity.wsgi.application'
 
