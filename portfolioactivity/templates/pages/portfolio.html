@@ -1,17 +1,119 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Portfolio</title> 
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Bonifacio's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'logo.png' %}">
+    
+  </head>
+  <!--------------------------------------------------------------- header ----------------------------------------------->
+  <body>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-</head> 
+    <script src="{% static 'script.js' %}" defer></script>
 
-<body> 
+    <div id="navbar">
+      <a href="{% url 'portfolio:index' %}" style="text-decoration: none;"><h1 id="syrean">Syrean's Portfolio</h1></a>
+      <div>
+        <a class="picking" href="#experience">Experience</a>
+        <a class="picking" href="#skills">Skills</a>
+        <a class="picking" href="{% url 'portfolio:cont' %}">About & Contact</a>
+      </div>
+    </div>
 
-<h1>Welcome to My Portfolio Page</h1> 
+  <!--------------------------------------------------------------- top page ----------------------------------------------->
 
-<p>This is a simple portfolio page created using Django.</p> 
 
-</body> 
+    <div class="top-page">
+      
+        <div class="profile"> 
+            <img src="{% static 'profile.png' %}" alt="profile" class="profile">
+        </div>
+        
+        <div class="name">
+        <h1>Angelo Syrean B. <b class="boni">Bonifacio</b></h1>
+        <p>I am a third year student at Gordon College and this is my portfolio, have a look around. This is my playground on how to practice on front-end</p>
+        <div class="links">
+            <a class="links" href="https://www.facebook.com/angelosyrean" target="_blank"><i class='bx bxl-facebook-square bx-md' ></i></a>
+            <a class="links" href="https://github.com/syrean" target="_blank"><i class='bx bxl-github bx-md' ></i></a>
+            <a class="links" href="https://mail.google.com/mail/?view=cm&fs=1&to=angelo.s.bonifacio@gmail.com" target="_blank"><i class='bx bxl-gmail bx-md' ></i></a>
+            <a href="https://discord.com/users/711247045343707138" target="_blank"><i class='bx bxl-discord-alt bx-md'></i></a>
+        </div>
+        <div>
+            <a href="../../static/boniCV.pdf" download style="text-decoration: none; padding: 2%;"><button class="bt-cv">Download CV</button></a>
+        </div>
+        </div>
+    </div>
+
+  <!--------------------------------------------------------------- Experience ----------------------------------------------->
+
+
+    <h2 id="experience">Experience</h2>
+  
+    <div class="experience">
+        <div class="artist">
+            <h3>Graphics Artist</h3>
+            <p><b>Company:</b> SigniCADS</p>
+            <p><b>Position:</b> Graphic Artist & Production </p>
+            <p><b>Duration:</b> 5 years</p>
+            <p><b>Description:</b> I have extensive experience in designing a wide variety of products, ranging from everyday items to customized, personalized creations tailored to meet the specific needs of our clients. Throughout this journey, I have worked diligently to ensure that every design is not only visually appealing but also of the highest quality. My attention to detail is paramount, as I strive to produce prints that are flawless and free from any issues, whether it’s on apparel, accessories, or other merchandise. By understanding the unique preferences of each client, I’m able to deliver products that not only meet but exceed expectations, creating lasting impressions and ensuring customer satisfaction. My commitment to excellence drives me to continually refine my skills and deliver outstanding results in every project.</p>
+        </div>
+        <div class="encoder">
+            <h3>Encoder</h3>
+            <p><b>Company:</b> James L. Gordon Memorial Hospital</p>
+            <p><b>Position:</b> Encoder & Photocopy</p>
+            <p><b>Duration:</b> 1 Month</p>
+            <p><b>Description:</b> I was responsible for encoding data into the database, ensuring that every entry was accurate and free of any misspellings or typos. Precision was crucial in this task, as even the smallest error could impact the integrity of the data. In addition to data entry, I also handled the photocopying of important documents required by our clients. Although I only performed these tasks for one month as it was a requirement for Practicum 1, I made sure to approach the work with the utmost care and attention to detail.</p>
+        </div>
+
+    </div>
+
+
+  <!--------------------------------------------------------------- Skills ----------------------------------------------->
+  <hr>
+
+    <h2 id="skills">Skills</h2>
+    <div class="skills">
+            <div class="photo">
+                <h3>Photography</h3>
+                  <p>Photography has become one of my favorite hobbies, as I find joy in capturing moments and scenes that I find beautiful. Whether it's the serene landscapes, intricate details of nature, or fleeting moments of everyday life, I love to freeze these memories in time. Over the years, not only have I had the opportunity to take a variety of photos that reflect the beauty I see in the world around me, but this hobby has also honed my skills and made photography one of my true talents. I'm excited to share some of these captured moments with you.</p>
+        <main class="grid-container">
+            <div class="grid-item"><img src="{% static '1.jpg' %}" alt=""></div>
+            <div class="grid-item"><img src="{% static '2.jpg' %}" alt=""></div>
+            <div class="grid-item"><img src="{% static '3.jpg' %}" alt=""></div>
+            <div class="grid-item"><img src="{% static '4.jpg' %}" alt=""></div>
+            <div class="grid-item"><img src="{% static '5.jpg' %}" alt=""></div>
+            <div class="grid-item"><img src="{% static '6.jpg' %}" alt=""></div>
+          </main>
+            </div>
+            <div class="social">
+                <h3>Sociable</h3>
+                  <p>At my core, I've always been an introverted person, preferring to observe and listen rather than be the center of attention. While I still identify as an introvert, I’m actively working on stepping out of my comfort zone each day, striving to make my presence known in a positive way. I want to be seen as approachable and open, someone who may not always be the first to speak, but who genuinely enjoys listening to others and understanding their perspectives. Although I may not be the most talkative, I find great value in connecting with people through thoughtful listening and meaningful interactions.</p>
+        <main class="grid-container">
+          <div class="grid-item"><img src="{% static '7.jpg' %}" alt=""></div>
+          <div class="grid-item"><img src="{% static '8.jpg' %}" alt=""></div>
+          <div class="grid-item"><img src="{% static '9.jpg' %}" alt=""></div>
+          <div class="grid-item"><img src="{% static '10.jpg' %}" alt=""></div>
+          <div class="grid-item"><img src="{% static '11.jpg' %}" alt=""></div>
+          <div class="grid-item"><img src="{% static '12.jpg' %}" alt=""></div>
+          </main>
+            </div>
+    </div>
+    <button id="bt-up" onclick="topFunction()" title="Go to top"><i class='bx bx-chevron-up bx-md'></i></button>
+    <footer>
+      <div>
+        &copy; 2025 Angelo Syrean Blanchard Bonifacio. All rights reserved.
+      </div>
+    </footer>
+  </body>
+
 </html>

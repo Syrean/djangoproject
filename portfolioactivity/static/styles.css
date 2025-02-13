@@ -1,0 +1,549 @@
+/*------------------------------- global --------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  color: aliceblue;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 12px;
+    display: none;
+  }
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #0c0c0c;
+}
+ul {
+  list-style-type: none;
+}
+
+/*------------------------------- navbar ---------------------------------*/
+
+#syrean {
+  font-family: "Edu VIC WA NT Beginner";
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+  justify-content: space-around;
+  background-color: #101720;
+  transition: top 0.3s;
+}
+
+.picking {
+  display: inline;
+  font-size: x-large;
+  text-decoration: none;
+  padding: 20px;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+.picking:hover {
+  color: #4a97f0;
+}
+
+/*------------------------------- top page index---------------------------*/
+
+.top-page-ind{
+  padding: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../static/bg-top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-page-ind p{
+  font-size: 25px;
+}
+
+/*------------------------------- top page --------------------------------*/
+
+.top-page {
+  padding: 15%;
+  display: flex;
+  align-items: center;
+  background-image: url(../static/bg-top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-page p {
+  font-size: 25px;
+}
+
+.links {
+  padding-right: 3%;
+  padding-top: 2%;
+}
+
+.dl-cv {
+  padding: 2%s;
+}
+
+.profile {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  max-width: fit-content;
+}
+
+.name {
+  padding: 5%;
+}
+
+.name p {
+  padding-top: 2%;
+}
+
+.name h1 {
+  font-size: 40px;
+}
+
+.boni {
+    font-size: 75px;
+    transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+.boni:hover {
+  color: #4a97f0;
+}
+
+.bt-cv {
+  align-items: center;
+  appearance: button;
+  background-color: #233347;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bt-cv:active {
+  background-color: #006ae8;
+}
+
+.bt-cv:hover {
+  background-color: #1c84ff;
+}
+
+.bt-cv:hover {
+  box-shadow: rgba(0, 1, 0, 0.2) 0 2px 8px;
+  opacity: 0.85;
+}
+
+.bt-cv:active {
+  outline: 0;
+}
+
+.bt-cv:focus {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 3px;
+}
+
+/*------------------------------- top page --------------------------------*/
+
+.bt-port {
+  align-items: center;
+  appearance: button;
+  background-color: #233347;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 50px;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.bt-port:active {
+  background-color: #006ae8;
+}
+
+.bt-port:hover {
+  background-color: #1c84ff;
+}
+
+.bt-port:hover {
+  box-shadow: rgba(0, 1, 0, 0.2) 0 2px 8px;
+  opacity: 0.85;
+}
+
+.bt-port:active {
+  outline: 0;
+}
+
+.bt-port:focus {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 3px;
+}
+
+/*------------------------------- experience ---------------------------------*/
+
+#experience {
+  font-family: "Edu VIC WA NT Beginner";
+  font-size: 50px;
+  text-align: center;
+  padding-top: 2%;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+#experience:hover {
+  color: #4a97f0;
+}
+
+.experience {
+  align-items: center;
+  margin: 3%;
+  padding: 2%;
+  border: 2px solid #26364b;
+  border-radius: 5px;
+}
+.artist {
+  padding: 5%;
+  border: 2px solid #26364b;
+  border-radius: 5px;
+  background-image: url(../static/artist.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.671);
+  background-blend-mode: darken;
+}
+
+.encoder {
+  margin-top: 2%;
+  padding: 5%;
+  border: 2px solid #26364b;
+  border-radius: 5px;
+  background-image: url(../static/encode.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.671);
+  background-blend-mode: darken;
+}
+
+.experience b {
+  padding-right: 1%;
+}
+
+.experience p {
+  padding: 1%;
+  text-align: justify !important;
+  font-size: 24px;
+}
+
+.experience h3 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 5%;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+.experience h3:hover {
+  color: #4a97f0;
+}
+
+/*------------------------------- skills --------------------------------*/
+
+#skills {
+  padding: 3%;
+  font-family: "Edu VIC WA NT Beginner";
+  font-size: 50px;
+  text-align: center;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+#skills:hover {
+  color: #4a97f0;
+}
+
+.skills {
+  padding: 5%;
+}
+
+.skills p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 5%;
+}
+
+.skills h3 {
+  font-size: 30px;
+  font-family: "Edu VIC WA NT Beginner";
+  font-size: 35px;
+}
+
+.skills h3:hover {
+  text-decoration: underline;
+}
+
+.social {
+  padding-top: 5%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    auto
+  ); /* Adjusted to auto-size the columns */
+  grid-template-rows: repeat(6, auto);
+  gap: 15px; /* Spacing between grid items */
+  justify-content: center; /* Horizontally centers the grid */
+  align-content: center; /* Vertically centers the grid */
+  margin: 0 auto; /* Centers the grid-container within its parent */
+}
+
+.grid-item {
+  width: 280px;
+  height: 280px;
+  text-align: center;
+  border-radius: 5px;
+  border: 5px solid #101720;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.grid-container {
+  grid-template-columns: repeat(3, auto); /* Adjust for 3 per columns */
+  grid-template-rows: repeat(3, auto);
+}
+
+/*------------------------------- about --------------------------------*/
+
+#about {
+  font-family: "Edu VIC WA NT Beginner";
+  font-size: 50px;
+  text-align: center;
+  padding-top: 10%;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+#about:hover {
+  color: #4a97f0;
+}
+
+.desc1,
+.desc2 {
+  font-size: 20px;
+  padding: 3%;
+  text-align: justify;
+}
+
+/*------------------------------- contact --------------------------------*/
+
+hr {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #0c0c0c, #8f8f8f, #0c0c0c);
+}
+
+hr:after {
+  content: "§";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: #0c0c0c;
+}
+
+#contact {
+  padding-top: 3%;
+  font-family: "Edu VIC WA NT Beginner";
+  font-size: 40px;
+  text-align: center;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+}
+
+#contact:hover {
+  color: #4a97f0;
+}
+
+.contacts {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+}
+
+.contacts p {
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+
+.con {
+  text-decoration: none;
+}
+/*------------------------------- footer --------------------------------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101720;
+  color: #ffffff;
+  padding: 2%;
+  font-family: "Edu VIC WA NT Beginner";
+}
+
+#bt-up {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  border: none;
+  outline: none;
+  background-color: #101720;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 30%;
+}
+
+#bt-up:hover {
+  background-color: #4a97f0;
+}
+
+/*------------------------------- media query --------------------------------*/
+
+@media (max-width: 900px) {
+  .top-page {
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../static/bg-top.png)
+  }
+
+  .experience {
+    padding: 1%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+  }
+
+  .profile {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    max-width: fit-content;
+  }
+
+  .name p {
+    font-size: 16px;
+  }
+
+  .experience p,
+  .photo p,
+  .social p,
+  .desc1 p,
+  .desc2 p {
+    font-size: 16px;
+    padding: 5%;
+  }
+
+  footer {
+    font-size: 10px;
+    padding: 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, auto); /* Adjust for 2 per columns */
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+@media (max-width: 850px) {
+  #navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  #syrean {
+    display: flex;
+    text-align: center;
+  }
+
+  .picking {
+    display: none;
+  }
+
+  #bt-up {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border: none;
+    outline: none;
+    background-color: #101720;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30%;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid-container {
+    grid-template-columns: repeat(1, auto); /* Adjust for 1 per columns */
+    grid-template-rows: repeat(1, auto);
+  }
+}

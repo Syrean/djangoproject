@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Bonifacio's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'logo.png' %}">
+    
+  </head>
+  <!--------------------------------------------------------------- header ----------------------------------------------->
+  <body>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="{% static 'script.js' %}" defer></script>
+
+    <div id="navbar">
+        <a href="{% url 'portfolio:index' %}" style="text-decoration: none;"><h1 id="syrean">Syrean's Portfolio</h1></a>
+
+      <div>
+        <a class="picking" href="{% url 'portfolio:portf' %}">Portfolio</a>
+      </div>
+    </div>
+
+
+
+<!--------------------------------------------------------------- About ----------------------------------------------->
+
+<hr>
+
+<h2 id="about">About Me</h2>
+
+<div class="about">
+        <div class="desc1">
+            <p>
+    Hello! My name is Angelo Syrean Blanchard Bonifacio, and I'm passionate about
+    becoming a skilled front-end developer. I believe that growth comes
+    through continuous learning and experimentation, which is why I've
+    created this website as my personal playground for coding. Here, you'll
+    find my journey as I dive into various front-end technologies, testing
+    ideas, exploring new techniques, and learning from both successes and
+    mistakes. This platform is a reflection of my commitment to improving my
+    skills and staying at the forefront of web development. Thank you for
+    joining me on this exciting adventure!
+            </p>
+        </div>
+
+        <div class="desc2">
+            <p>
+    I am currently a 3rd-year student at Gordon College - College of
+    Computer Studies, pursuing a Bachelor of Science in Information
+    Technology. At 20 years old, I'm at an exciting point in my academic
+    journey, eager to learn and grow in the field of IT. While I may not be
+    the most expressive person, I find strength in being a good listener,
+    which allows me to understand and connect with others on a deeper level.
+    Although I may not excel at everything, I am determined to be versatile
+    and proficient in as many areas as possible. I believe in continuous
+    improvement and am always looking for opportunities to expand my
+    knowledge and skills. There's so much I want to share with the world,
+    and I'm looking forward to the experiences and challenges that lie
+    ahead.
+            </p>
+        </div>
+</div>
+
+  <!--------------------------------------------------------------- Contact ----------------------------------------------->
+
+  <hr>
+    
+    <h2 id="contact">Contact Information</h2>
+
+    <div class="contacts">
+                <p class="contacts">Feel free to contact me at</p>
+            <div>
+                <ul>
+        <li class="list"><i class="bx bxl-gmail"> <a class="con" href="https://mail.google.com/mail/?view=cm&fs=1&to=angelo.s.bonifacio@gmail.com" target="_blank">angelo.s.bonifacio@gmail.com</a></i></li>
+        <li class="list"><i class="bx bxl-facebook"> <a class="con" href="https://www.facebook.com/angelosyrean" target="_blank">Angelo Bonifacio</a></i></li>
+        <li class="list"><i class="bx bxs-phone"> <a class="con" href="tel:+639171232903" target="_blank">(+63)917 123 2903</a></i></li>
+        <li class="list"><i class="bx bxl-twitch"></i> <a class="con" href="https://www.twitch.tv/syrean_" target="_blank">syrean_</a></i></li>
+        <li class="list"><i class='bx bxl-discord-alt'></i> <a class="con" href="https://discord.com/users/711247045343707138" target="_blank">syrean_</a></li>
+                </ul>
+            </div>
+    </div>
+    <button id="bt-up" onclick="topFunction()" title="Go to top"><i class='bx bx-chevron-up bx-md'></i></button>
+    <footer>
+      <div>
+        &copy; 2025 Angelo Syrean Blanchard Bonifacio. All rights reserved.
+      </div>
+    </footer>
+  </body>
+
+</html>
