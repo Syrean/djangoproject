@@ -16,6 +16,7 @@
 body {
   font-family: "Poppins";
   background-color: #0c0c0c;
+  width: 100%
 }
 ul {
   list-style-type: none;
